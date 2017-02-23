@@ -1,1 +1,1 @@
-CSC-134
+This is a showcase of work done in school and otherwise. As I got on further this will be further revised, organized, and updated.
