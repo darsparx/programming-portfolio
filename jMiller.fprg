@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="darsparx"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2017-01-31 03:40:34 PM"/>
+        <attribute name="created" value="ZGFyc3Bhcng7IEpPU0hVQU1JTExFQzJDRDsgMjAxNy0wMS0zMTsgMDM6Mjg6NTcgUE07IDMzMzA="/>
+        <attribute name="edited" value="ZGFyc3Bhcng7IEpPU0hVQU1JTExFQzJDRDsgMjAxNy0wMS0zMTsgMDM6NDA6MzQgUE07IDMzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="powerful" type="String" array="False" size="" variables="powerful"/>
+            <output expression="&quot;Are you powerful?&quot;"/>
+            <input variable="powerful"/>
+            <if expression="powerful = &quot;Yes&quot;&#13;&#10;or powerful = &quot;yes&quot;">
+                <then>
+                    <output expression="&quot;Hello Universe&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;Hello World&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
