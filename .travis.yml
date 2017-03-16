@@ -5,3 +5,4 @@ compiler:
 os:
   -linux
   -osx
+script: csc-134-files/Joshua_Miller_Project2.cpp
