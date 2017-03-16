@@ -29,12 +29,12 @@ int main()
 
 	cout << "Enter your choice: ";
 	cin >> choice;
+	cin.ignore();
 
 	switch (choice) {
 		case 1:
 			cout << "Enter the name of the customer: ";
-			cin >> cName;
-			cout << "\n";
+			getline(cin, cName);
 			cout << "Enter the customer's address: ";
 			getline(cin, stAddress);
 
@@ -54,11 +54,11 @@ int main()
 			cout << endl << cName << endl << stAddress << endl;
 			cout << city << ", " << state << " " << zip << endl;
 			cout << "Amount Owed: $" << setprecision(2) << fixed << total << endl << endl;
-
+			total *= 100;
 			cout << "Enter the amount recieved from the customer: ";
 			cin >> recieved;
 			if (recieved >= total) {
-			change = recieved - (total * 100);
+			change = recieved - (total);
 
 				cout << " Denomination                    Number" << endl;
 				cout << "--------------              ---------------" << endl;
@@ -185,7 +185,7 @@ int main()
 			}
 			else if (letter == 'Z' || letter == 'z')
 			{
-				cout << "The letter " << letter << " translates to -.--" << endl << endl;
+				cout << "The letter " << letter << " translates to --.." << endl << endl;
 			}
 			break;
 
